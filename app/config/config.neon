@@ -3,6 +3,7 @@ extensions:
 	orm: Nextras\Orm\Bridges\NetteDI\OrmExtension
 	migrations: Nextras\Migrations\Bridges\NetteDI\MigrationsExtension
 	console: Contributte\Console\DI\ConsoleExtension(%consoleMode%)
+
 php:
 	date.timezone: Europe/Prague
 
@@ -27,3 +28,5 @@ migrations:
 services:
 	routerFactory: OrmDemo\RouterFactory()
 	router: @routerFactory::createRouter
+
+dbal: %database%

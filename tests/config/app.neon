@@ -1,0 +1,2 @@
+services:
+	cache.storage: Nette\Caching\Storages\DevNullStorage

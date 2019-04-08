@@ -17,8 +17,16 @@
 		"tracy/tracy": "^2.6",
 		"nextras/orm": "~3.0@dev",
 		"nextras/dbal": "~3.0@dev",
-		"nextras/migrations": "~3.0",
+		"nextras/migrations": "@dev",
 		"contributte/console": "^0.5.0",
 		"nextras/secured-links": "@dev"
+	},
+	"autoload": {
+		"classmap": ["libs", "app"]
+	},
+	"require-dev": {
+		"mangoweb/tester-infrastructure": "@dev",
+		"mangoweb/tester-database-creator": "@dev",
+		"mangoweb/tester-nextras-transactional": "@dev"
 	}
 }
